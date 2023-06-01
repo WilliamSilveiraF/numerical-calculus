@@ -1,11 +1,11 @@
 #Curvas de bezier multiplas, em 3 segmentos
 # Definição do numero 2 estilizado, usando 3 segmentos de Curvas de Bezier
-x=[2  0.001  0  0; 
-   0  1.5  2  2; 
-   2  1.25  0.75  0];
-y=[2  2  2  1; 
-   1  1  0.5  -0.5; 
-   -0.5  -3 -3 -0.5];
+x=[2  -0.25  0  0; 
+   0  0.001  1.999  2; 
+   2  1.999  0.001  0];
+y=[3  3.5  3  2; 
+   2  0.5  1.75  -1; 
+   -1  -3.5 -3.5 -1];
 Nsegmentos=size(x,1)
 
 for n=1:Nsegmentos
