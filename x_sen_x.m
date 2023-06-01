@@ -22,14 +22,22 @@ function [y, coef] = x_sen_x(x, xi, erro_max)
         coef = [coef, coef_n];
 
         % Calcule a próxima derivada
-        if mod(n, 4) == 0
+        if mod(n, 8) == 0
             derivada = sin(xi) + xi*cos(xi);
-        elseif mod(n, 4) == 1
+        elseif mod(n, 8) == 1
             derivada = 2*cos(xi) - xi*sin(xi);
-        elseif mod(n, 4) == 2
+        elseif mod(n, 8) == 2
             derivada = -3*sin(xi) - xi*cos(xi);
-        else
+        elseif mod(n, 8) == 3
             derivada = -4*cos(xi) + xi*sin(xi);
+        elseif mod(n, 8) == 4
+            derivada = 5*sin(xi) + xi*cos(xi);
+        elseif mod(n, 8) == 5
+            derivada = 6*cos(xi) - xi*sin(xi);
+        elseif mod(n, 8) == 6
+            derivada = -7*sin(xi) - xi*cos(xi);
+        else
+            derivada = -8*cos(xi) + xi*sin(xi);
         end
         n = n + 1;
     end
