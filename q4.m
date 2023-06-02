@@ -1,3 +1,5 @@
+#4). Use aproximações parametrizadas de Bezier Cúbica para representar graficamente o número 5 estilizado.
+
 #Curvas de bezier multiplas, em 3 segmentos
 # Definição do numero 2 estilizado, usando 3 segmentos de Curvas de Bezier
 x=[2  -0.25  0  0; 

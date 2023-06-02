@@ -1,4 +1,5 @@
-% Q3
+# 3). Use a Interpolação Spline Cúbica (quadrática nos extremos) para representar graficamente uma função 1/x entre [1; 2] com 2 Splines, ou mais;
+
 fprintf('Q3\n');
 
 
